@@ -210,8 +210,8 @@ hexo s(serve) </code></pre><p>hexo部署github</p>
 hexo c (clean) &amp;&amp; hexo g (generate) &amp;&amp; hexo s (server) 
 hexo d(deployer) 推送到github上</code></pre>
       
-      
-      <!-- 版权信息 -->  
+
+      <!-- 版权信息 -->
       
       
         <div class="declare" hidden="hidden"></div>
@@ -308,26 +308,28 @@ hexo d(deployer) 推送到github上</code></pre>
 
   
 
-  
-  
-      <div id="gitalk-container"></div>
+
+    <div id="gitalk-container" style="padding: 0px 30px 0px 30px;"></div> 
+
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
 <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
-<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.js"></script>
+<script type="text/javascript">
 
-<script>
-var gitalk = new Gitalk({
-  clientID: '654983f284d5deec47f5',
-  clientSecret: 'd33a6417e76d0707fa8dddb3c32f8cdd1ca5bb48',
-  repo: 'bianxuerui.github.io',
-  owner: 'BianXuerui',
-  admin: ['erbiduo'],
-  id: md5(window.location.pathname),
-  distractionFreeMode: true
+if(true){
+	var gitalk = new Gitalk({
+  	clientID: '',
+  	clientSecret: '',
+  	repo: 'bianxuerui.github.io',
+  	owner: '',
+  	admin: [''],
+  	id: 'Wed Apr 01 2020 10:47:00 GMT+0800',
+  	distractionFreeMode: 'true'
 })
-
-gitalk.render('gitalk-container')
+gitalk.render('gitalk-container') 
+}
 </script>
+    
+
   
 
 
