@@ -8,15 +8,15 @@
   <link rel="dns-prefetch" href="https://bianxuerui.github.io">
   <title>JS精确倒计时实现 | 卞卞不是便便</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="需求： 目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时 踩坑： 用户吐槽如果手机保持打开倒计时页面长时间不动，两个不同的手机因为时间过长会产生过大的差异，导致一些用户倒计时显示还没结束实际上已经被抢购完了。 原因： 1.前端不应该采用客户端时间来计时，要根据服务器返回的时间进行判断 2.没有考虑js冻结运行耗费时间;(移动端下滑页面的倒计时不动，目前app没有涉及) 3.js计">
+  <meta name="description" content="需求： 目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="JS精确倒计时实现">
 <meta property="og:url" content="https://bianxuerui.github.io/2020/04/03/JS%E7%B2%BE%E7%A1%AE%E5%80%92%E8%AE%A1%E6%97%B6%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="卞卞不是便便">
-<meta property="og:description" content="需求： 目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时 踩坑： 用户吐槽如果手机保持打开倒计时页面长时间不动，两个不同的手机因为时间过长会产生过大的差异，导致一些用户倒计时显示还没结束实际上已经被抢购完了。 原因： 1.前端不应该采用客户端时间来计时，要根据服务器返回的时间进行判断 2.没有考虑js冻结运行耗费时间;(移动端下滑页面的倒计时不动，目前app没有涉及) 3.js计">
+<meta property="og:description" content="需求： 目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-03T07:34:00.000Z">
-<meta property="article:modified_time" content="2020-04-03T07:49:08.789Z">
+<meta property="article:modified_time" content="2020-04-03T07:51:18.703Z">
 <meta property="article:author" content="卞卞不是便便">
 <meta name="twitter:card" content="summary">
   
@@ -187,7 +187,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>需求：</p>
-<pre><code>目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时</code></pre><p> 踩坑：</p>
+<pre><code>目前app需要做一个VIP抢购功能，提到抢购功能前端必不可少倒计时</code></pre><a id="more"></a>
+<p> 踩坑：</p>
 <pre><code>用户吐槽如果手机保持打开倒计时页面长时间不动，两个不同的手机因为时间过长会产生过大的差异，导致一些用户倒计时显示还没结束实际上已经被抢购完了。</code></pre><p> 原因：</p>
 <pre><code>1.前端不应该采用客户端时间来计时，要根据服务器返回的时间进行判断
 2.没有考虑js冻结运行耗费时间;(移动端下滑页面的倒计时不动，目前app没有涉及)
