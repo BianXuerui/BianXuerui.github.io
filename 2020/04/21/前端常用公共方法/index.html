@@ -6,14 +6,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Archive - 卞卞不是便便</title>
+  <title>基于Hexo搭建博客 - 卞卞不是便便</title>
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="google" content="notranslate" />
   
   <meta name="keywords" content="bian,"> 
   
-  <meta name="description" content="A handsome guy!,"> 
+  <meta name="description" content="A handsome guy!,针对undefined null ‘null’ 数据的..."> 
   
   <meta name="author" content="卞卞不是便便"> 
   <link rel="shortcut icon" href="/image/logo.png">
@@ -104,35 +104,58 @@
 </nav>
 </header>
   <main id="main">
-  <section class="archive">
-    <div class="archive-container">
-      <div class="archive-post">
-        <h3 class="archive-total">归档: 3篇</h3>
-        
-        
-        
-        <h3 class="archive-year">2020</h3>
-        
-        <div class="archive-item">
-          <a class="archive-date" href="/2020/04/21/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1%E6%96%B9%E6%B3%95/">04/21</a>
-          <a class="archive-title" href="/2020/04/21/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1%E6%96%B9%E6%B3%95/">基于Hexo搭建博客</a>
-        </div>
-        
-        
-        <div class="archive-item">
-          <a class="archive-date" href="/2020/04/03/JS%E7%B2%BE%E7%A1%AE%E5%80%92%E8%AE%A1%E6%97%B6%E5%AE%9E%E7%8E%B0/">04/03</a>
-          <a class="archive-title" href="/2020/04/03/JS%E7%B2%BE%E7%A1%AE%E5%80%92%E8%AE%A1%E6%97%B6%E5%AE%9E%E7%8E%B0/">JS精确倒计时实现</a>
-        </div>
-        
-        
-        <div class="archive-item">
-          <a class="archive-date" href="/2020/04/01/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">04/01</a>
-          <a class="archive-title" href="/2020/04/01/%E5%9F%BA%E4%BA%8EHexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">基于Hexo搭建博客</a>
-        </div>
-        
-      </div>
+  <div class="container" id="container">
+    <article class="article">
+  <section class="head">
+  <img src="https://bianxrimg-1259083132.cos.ap-beijing.myqcloud.com/img/3.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">基于Hexo搭建博客</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-04-21</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>284</span>
     </div>
+  </div>
+</section>
+  <section class="main">
+    <section class="content">
+      <h5 id="针对undefined-null-‘null’-数据的异常统一处理"><a href="#针对undefined-null-‘null’-数据的异常统一处理" class="headerlink" title="针对undefined null ‘null’ 数据的异常统一处理"></a>针对undefined null ‘null’ 数据的异常统一处理</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">function(obj)&#123;</span><br><span class="line">    if (typeof(obj) &#x3D;&#x3D; &quot;undefined&quot; || obj &#x3D;&#x3D; &quot;&quot; || obj &#x3D;&#x3D; null || obj &#x3D;&#x3D; &quot;null&quot;) &#123;</span><br><span class="line">		return &quot;&quot;;</span><br><span class="line">	&#125; else &#123;</span><br><span class="line">		return obj;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+    </section>
+    <section class="extra">
+      
+        <section class="donate">
+  <div class="qrcode">
+    <img src="/image/zfb.jpg">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+      
+      
+      
+<nav class="nav">
+  
+  
+    <a href="/2020/04/03/JS%E7%B2%BE%E7%A1%AE%E5%80%92%E8%AE%A1%E6%97%B6%E5%AE%9E%E7%8E%B0/">JS精确倒计时实现<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+    </section>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<section class="comment">
+  <div class="btn" id="show-gitalk">查看评论</div>
+  <div id="gitalk-container" class="gitalk-container"></div>
+</section>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
   </section>
+</article>
+  </div>
 </main>
   <footer class="footer">
   <div class="footer-social">
