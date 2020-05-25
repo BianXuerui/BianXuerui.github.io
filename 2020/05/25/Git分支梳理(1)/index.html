@@ -1,0 +1,281 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Git分支梳理 - 卞卞不是便便</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  
+  <meta name="keywords" content="bian,"> 
+  
+  <meta name="description" content="A handsome guy!,Git分支梳理
+开发需要：1.主分支（master）2..."> 
+  
+  <meta name="author" content="卞卞不是便便"> 
+  <link rel="shortcut icon" href="/image/logo.png">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_58xq2j9v1id.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.10/styles/a11y-dark.min.css">
+
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {}
+    CONFIG = {
+      fancybox: true,
+      pjax: false,
+      highlight: true,
+      donate_alipay: '/image/zfb.jpg',
+      donate_wechat: '/image/wechat.jpg',
+      gitalk: {
+        enable: true,
+        clientID: '654983f284d5deec47f5',
+        clientSecret: 'd33a6417e76d0707fa8dddb3c32f8cdd1ca5bb48',
+        id: window.location.pathname,
+        repo: 'BianXuerui.github.io',
+        owner: 'BianXuerui',
+        admin: 'BianXuerui'
+      },
+      motto: {
+        api: '',
+        default: '我在开了灯的床头下，想问问自己的心啊。'
+      }
+    }
+  </script>
+
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body class="lock-screen">
+  <div class="loading">
+  <div class="loading-wrap">
+    <div class="loading-spinner">
+      <div class="loading-bounce1"></div>
+      <div class="loading-bounce2"></div>
+    </div>
+  </div>
+</div>
+  <header>
+  <nav class="menu">
+  <div class="menu-close">
+    <i class="iconfont iconplus"></i>
+  </div>
+  <ul class="menu-content">
+    
+    
+    
+    
+    <li class="menu-item"><a href="/ "> 首页</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/archives "> 归档</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/about "> 关于</a></li>
+    
+  </ul>
+  <div class="menu-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</nav>
+</header>
+  <main id="main">
+  <div class="container" id="container">
+    <article class="article">
+  <section class="head">
+  <img src="https://bianxrimg-1259083132.cos.ap-beijing.myqcloud.com/img/5.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">Git分支梳理</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-05-25</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>819</span>
+    </div>
+  </div>
+</section>
+  <section class="main">
+    <section class="content">
+      <h4 id="Git分支梳理"><a href="#Git分支梳理" class="headerlink" title="Git分支梳理"></a>Git分支梳理</h4><blockquote>
+<p>开发需要：1.主分支（master）2.开发分支（dev）3.打包分支（pack）4.bug分支（bug）</p>
+</blockquote>
+<h4 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h4><h6 id="新建git仓库"><a href="#新建git仓库" class="headerlink" title="新建git仓库"></a>新建git仓库</h6><ul>
+<li><input checked="" disabled="" type="checkbox"> git init</li>
+</ul>
+<h6 id="添加文件到暂存区"><a href="#添加文件到暂存区" class="headerlink" title="添加文件到暂存区"></a>添加文件到暂存区</h6><ul>
+<li><input checked="" disabled="" type="checkbox"> git add .</li>
+</ul>
+<h6 id="代码提交"><a href="#代码提交" class="headerlink" title="代码提交"></a>代码提交</h6><ul>
+<li><input checked="" disabled="" type="checkbox"> git commit -m ‘’</li>
+</ul>
+<h6 id="分支"><a href="#分支" class="headerlink" title="分支"></a>分支</h6><ul>
+<li><input checked="" disabled="" type="checkbox"> 查看分支              git branch</li>
+<li><input checked="" disabled="" type="checkbox"> 新建分支/切换分支     git branch [name]</li>
+<li><input checked="" disabled="" type="checkbox"> 新建并切换分支        git branch -b [name]</li>
+<li><input checked="" disabled="" type="checkbox"> 删除分支              git branch -d [name]</li>
+<li><input checked="" disabled="" type="checkbox"> 合并分支              git merge [name]</li>
+</ul>
+<h6 id="提交"><a href="#提交" class="headerlink" title="提交"></a>提交</h6><ul>
+<li><input checked="" disabled="" type="checkbox"> git push origin master</li>
+</ul>
+<h5 id="说明"><a href="#说明" class="headerlink" title="说明"></a>说明</h5><blockquote>
+<p>主分支：主分支用来保存程序的主要代码；</p>
+</blockquote>
+<blockquote>
+<p>开发分支：开发分支用来完成新需求；</p>
+</blockquote>
+<blockquote>
+<p>打包分支：打包分支用来完成程序的打包上传（类似于主分支内容）；</p>
+</blockquote>
+<blockquote>
+<p>bug分支：bug分支用于在执行其他任务时，遇紧急bug需要修复，保存正在开发的工作（git stash）切回主分支，创建bug分支修复紧急bug。</p>
+</blockquote>
+<h5 id="情况一"><a href="#情况一" class="headerlink" title="情况一"></a>情况一</h5><hr>
+<h6 id="某阶段开发告一段落，准备新需求开发，创建并切换到dev分支"><a href="#某阶段开发告一段落，准备新需求开发，创建并切换到dev分支" class="headerlink" title="某阶段开发告一段落，准备新需求开发，创建并切换到dev分支"></a>某阶段开发告一段落，准备新需求开发，创建并切换到dev分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -b dev</span><br></pre></td></tr></table></figure>
+
+<h6 id="需求开发完成切换到master分支，进行分支合并"><a href="#需求开发完成切换到master分支，进行分支合并" class="headerlink" title="需求开发完成切换到master分支，进行分支合并"></a>需求开发完成切换到master分支，进行分支合并</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge dev</span><br></pre></td></tr></table></figure>
+
+<h6 id="确认无误master分支内容进行推送"><a href="#确认无误master分支内容进行推送" class="headerlink" title="确认无误master分支内容进行推送"></a>确认无误master分支内容进行推送</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git push origin master</span><br></pre></td></tr></table></figure>
+
+<h5 id="情况二"><a href="#情况二" class="headerlink" title="情况二"></a>情况二</h5><hr>
+<h6 id="某需求开发进行中，遇紧急bug需要修复，保存正在开发分支"><a href="#某需求开发进行中，遇紧急bug需要修复，保存正在开发分支" class="headerlink" title="某需求开发进行中，遇紧急bug需要修复，保存正在开发分支"></a>某需求开发进行中，遇紧急bug需要修复，保存正在开发分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git stash</span><br></pre></td></tr></table></figure>
+
+<h6 id="工作区恢复干净，切换到master分支创建并切换bug分支"><a href="#工作区恢复干净，切换到master分支创建并切换bug分支" class="headerlink" title="工作区恢复干净，切换到master分支创建并切换bug分支"></a>工作区恢复干净，切换到master分支创建并切换bug分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -b bug001</span><br></pre></td></tr></table></figure>
+<h6 id="bug修复完成，切回master分支"><a href="#bug修复完成，切回master分支" class="headerlink" title="bug修复完成，切回master分支"></a>bug修复完成，切回master分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch master</span><br></pre></td></tr></table></figure>
+<h6 id="合并分支"><a href="#合并分支" class="headerlink" title="合并分支"></a>合并分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git merge bug001</span><br></pre></td></tr></table></figure>
+<h6 id="删除无用bug001分支"><a href="#删除无用bug001分支" class="headerlink" title="删除无用bug001分支"></a>删除无用bug001分支</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git branch -d bug001</span><br></pre></td></tr></table></figure>
+
+
+    </section>
+    <section class="extra">
+      
+        <section class="donate">
+  <div class="qrcode">
+    <img src="/image/zfb.jpg">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+      
+      
+      
+<nav class="nav">
+  
+  
+    <a href="/2020/04/21/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8%E5%85%AC%E5%85%B1%E6%96%B9%E6%B3%95/">前端常用公共方法类<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+    </section>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<section class="comment">
+  <div class="btn" id="show-gitalk">查看评论</div>
+  <div id="gitalk-container" class="gitalk-container"></div>
+</section>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
+  </section>
+</article>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-social">
+    
+    
+    
+    
+    
+    <a href="tencent://message/?Menu=yes&uin=407955981 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconQQ "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://github.com/bianxuerui " target="_blank" onMouseOver="this.style.color= '#24292E'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  icongithub-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="407955981@qq.com " target="_blank" onMouseOver="this.style.color='#FFBE5B'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconmail"></i>
+    </a>
+    
+  </div>
+  <div class="footer-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</footer>
+  <div class="fab fab-plus">
+  <i class="iconfont iconplus"></i>
+</div>
+<div class="fab fab-up">
+  <i class="iconfont iconcaret-up"></i>
+</div>
+<div class="fab fab-menu">
+  <i class="iconfont iconmenu"></i>
+</div>
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+</html>
