@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Typescript - 卞卞不是便便</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  
+  <meta name="keywords" content="bian,"> 
+  
+  <meta name="description" content="A handsome guy!,1. typescript 环境搭建1234561. ..."> 
+  
+  <meta name="author" content="卞卞不是便便"> 
+  <link rel="shortcut icon" href="/image/logo.png">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_58xq2j9v1id.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.10/styles/a11y-dark.min.css">
+
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {}
+    CONFIG = {
+      fancybox: true,
+      pjax: false,
+      highlight: true,
+      donate_alipay: '/image/zfb.jpg',
+      donate_wechat: '/image/wechat.jpg',
+      gitalk: {
+        enable: true,
+        clientID: '654983f284d5deec47f5',
+        clientSecret: 'd33a6417e76d0707fa8dddb3c32f8cdd1ca5bb48',
+        id: window.location.pathname,
+        repo: 'BianXuerui.github.io',
+        owner: 'BianXuerui',
+        admin: 'BianXuerui'
+      },
+      motto: {
+        api: '',
+        default: '兄 嘚'
+      }
+    }
+  </script>
+
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body class="lock-screen">
+  <div class="loading">
+  <div class="loading-wrap">
+    <div class="loading-spinner">
+      <div class="loading-bounce1"></div>
+      <div class="loading-bounce2"></div>
+    </div>
+  </div>
+</div>
+  <header>
+  <nav class="menu">
+  <div class="menu-close">
+    <i class="iconfont iconplus"></i>
+  </div>
+  <ul class="menu-content">
+    
+    
+    
+    
+    <li class="menu-item"><a href="/ "> 首页</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/archives "> 归档</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/blogroll "> 友情链接</a></li>
+    
+  </ul>
+  <div class="menu-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</nav>
+</header>
+  <main id="main">
+  <div class="container" id="container">
+    <article class="article">
+  <section class="head">
+  <img src="https://bianxrimg-1259083132.cos.ap-beijing.myqcloud.com/img/6.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">Typescript</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-07-25</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>753</span>
+    </div>
+  </div>
+</section>
+  <section class="main">
+    <section class="content">
+      <h5 id="1-typescript-环境搭建"><a href="#1-typescript-环境搭建" class="headerlink" title="1. typescript 环境搭建"></a>1. typescript 环境搭建</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">1. node	node环境</span><br><span class="line">2. npm install typescript -g&#x2F;yarn global add typescript	安装命令</span><br><span class="line">3. tsc Demo.ts	ts文件转js文件</span><br><span class="line">4. node Demo.js	运行</span><br><span class="line">5. npm install -g ts-node 安装全局简易命令</span><br><span class="line">6. ts-node Demo.ts 简易运行命令</span><br></pre></td></tr></table></figure>
+
+
+
+<h5 id="2-typescript-静态类型"><a href="#2-typescript-静态类型" class="headerlink" title="2. typescript 静态类型"></a>2. typescript 静态类型</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> count : number = <span class="number">1</span>;</span><br></pre></td></tr></table></figure>
+<h6 id="自定义类型"><a href="#自定义类型" class="headerlink" title="自定义类型"></a>自定义类型</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">interface Demo &#123;</span><br><span class="line">    uname: string,</span><br><span class="line">    age: number</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">const</span> demo: Demo = &#123;</span><br><span class="line">    uname: ‘小红’，</span><br><span class="line">    age: <span class="number">18</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h5 id="3-typescript-基础静态类型和对象类型"><a href="#3-typescript-基础静态类型和对象类型" class="headerlink" title="3. typescript 基础静态类型和对象类型"></a>3. typescript 基础静态类型和对象类型</h5><h6 id="1-基础静态类型"><a href="#1-基础静态类型" class="headerlink" title="(1).基础静态类型"></a>(1).基础静态类型</h6><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">number string <span class="literal">null</span> undefinde boolean <span class="keyword">void</span> symbol</span><br></pre></td></tr></table></figure>
+
+<h6 id="2-对象静态类型"><a href="#2-对象静态类型" class="headerlink" title="(2).对象静态类型"></a>(2).对象静态类型</h6><hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">对象类型</span><br><span class="line">number string null undefinde boolean void symbol</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">数组类型</span><br><span class="line">const demo : string &#x3D; [‘小红’，‘小明’，‘小胖’]</span><br></pre></td></tr></table></figure>
+
+<hr>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">类类型</span><br><span class="line">class Person&#123;&#125;</span><br><span class="line">const demo ：Person &#x3D; new Person()</span><br><span class="line">&#96;&#96;&#96;            </span><br><span class="line"></span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+<p>函数类型<br>const demo : ()=&gt;string = () =&gt; { return ‘小红’ }<br>```</p>
+
+    </section>
+    <section class="extra">
+      
+        <section class="donate">
+  <div class="qrcode">
+    <img src="/image/zfb.jpg">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+      
+      
+      
+<nav class="nav">
+  
+  
+    <a href="/2020/05/25/Git%E5%88%86%E6%94%AF%E6%A2%B3%E7%90%86(1)/">Git分支梳理<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+    </section>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<section class="comment">
+  <div class="btn" id="show-gitalk">查看评论</div>
+  <div id="gitalk-container" class="gitalk-container"></div>
+</section>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
+  </section>
+</article>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-social">
+    
+    
+    
+    
+    
+    <a href="tencent://message/?Menu=yes&uin=407955981 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconQQ "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://github.com/bianxuerui " target="_blank" onMouseOver="this.style.color= '#24292E'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  icongithub-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="mailto://407955981@qq.com " target="_blank" onMouseOver="this.style.color='#FFBE5B'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconmail"></i>
+    </a>
+    
+  </div>
+  <div class="footer-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</footer>
+  <div class="fab fab-plus">
+  <i class="iconfont iconplus"></i>
+</div>
+<div class="fab fab-up">
+  <i class="iconfont iconcaret-up"></i>
+</div>
+<div class="fab fab-menu">
+  <i class="iconfont iconmenu"></i>
+</div>
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+</html>
