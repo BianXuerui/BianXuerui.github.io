@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>React成长计划 - 卞卞不是便便</title>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="google" content="notranslate" />
+  
+  <meta name="keywords" content="卞卞不是便便,"> 
+  
+  <meta name="description" content="A handsome guy!,React持续修行中…最近更新时间: 2020-08-..."> 
+  
+  <meta name="author" content="卞卞不是便便"> 
+  <link rel="shortcut icon" href="/image/logo.png">
+  
+<link rel="stylesheet" href="/css/style.css">
+
+
+  
+  
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1445822_58xq2j9v1id.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.css">
+
+  
+
+  
+  
+  
+<link rel="stylesheet" href="https://cdn.bootcss.com/highlight.js/9.15.10/styles/a11y-dark.min.css">
+
+  
+
+  <script>
+    var CONFIG = window.CONFIG || {}
+    CONFIG = {
+      fancybox: true,
+      pjax: false,
+      highlight: true,
+      donate_alipay: '/image/zfb.jpg',
+      donate_wechat: '/image/wechat.jpg',
+      gitalk: {
+        enable: true,
+        clientID: '654983f284d5deec47f5',
+        clientSecret: 'd33a6417e76d0707fa8dddb3c32f8cdd1ca5bb48',
+        id: window.location.pathname,
+        repo: 'BianXuerui.github.io',
+        owner: 'BianXuerui',
+        admin: 'BianXuerui'
+      },
+      motto: {
+        api: '',
+        default: '人生一世，草生一春。来如风雨，去似微尘。'
+      }
+    }
+  </script>
+
+  
+
+<meta name="generator" content="Hexo 4.2.0"></head>
+<body class="lock-screen">
+  <div class="loading">
+  <div class="loading-wrap">
+    <div class="loading-spinner">
+      <div class="loading-bounce1"></div>
+      <div class="loading-bounce2"></div>
+    </div>
+  </div>
+</div>
+  <header>
+  <nav class="menu">
+  <div class="menu-close">
+    <i class="iconfont iconplus"></i>
+  </div>
+  <ul class="menu-content">
+    
+    
+    
+    
+    <li class="menu-item"><a href="/ "> 首页</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/archives "> 归档</a></li>
+    
+    
+    
+    
+    <li class="menu-item"><a href="/blogroll "> 友情链接</a></li>
+    
+  </ul>
+  <div class="menu-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</nav>
+</header>
+  <main id="main">
+  <div class="container" id="container">
+    <article class="article">
+  <section class="head">
+  <img src="/image/post-image.jpg" draggable="false">
+  <div class="head-mask">
+    <h1 class="head-title">React成长计划</h1>
+    <div class="head-info">
+      <span class="post-info-item"><i class="iconfont iconcalendar"></i>2020-08-29</span
+        class="post-info-item">
+      
+      <span class="post-info-item"><i class="iconfont iconfont-size"></i>11450</span>
+    </div>
+  </div>
+</section>
+  <section class="main">
+    <section class="content">
+      <p><code>React</code>持续修行中…<br>最近更新时间: 2020-08-29 17:25:00</p>
+<a id="more"></a>
+
+<h4 id="React开发环境搭建"><a href="#React开发环境搭建" class="headerlink" title="React开发环境搭建"></a>React开发环境搭建</h4><blockquote>
+<h6 id="安装node"><a href="#安装node" class="headerlink" title="安装node"></a>安装node</h6></blockquote>
+<p>Node中文网址：<a href="http://nodejs.cn/" target="_blank" rel="noopener">http://nodejs.cn/</a> (建议你在这里下载，速度会快很多)</p>
+<p><code>Node.js</code>安装好以后，如果你是Windows系统,可以使用<code>Win+R</code>打开运行，然后输入<code>cmd</code>，打开终端。输入代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">node -v</span><br></pre></td></tr></table></figure>
+<p>如果正确出现版本号，说明你的Node已经安装成功了。</p>
+<p>然后再输入代码：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+<p>如果正确出现版本号，说明npm也是没问题的，可以放心大胆的使用了，至此Node.js安装就告一段落了，如果遇到报错不要怕，多试几次说不定哪次就成功了。</p>
+<blockquote>
+<h5 id="安装脚手架"><a href="#安装脚手架" class="headerlink" title="安装脚手架"></a>安装脚手架</h5></blockquote>
+<p>Node安装好以后，你就可以用npm来安装脚手架了，超级简单，只要打开终端，然后输入下面命令就可以了。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install -g create-react-app</span><br></pre></td></tr></table></figure>
+
+<p><code>create-react-app</code>是官方出的脚手架，据说有很多好用的第三方脚手架，也有非常优秀的，但是我们作为一名初学者，还是老老实实用官方提供的脚手架把。</p>
+<blockquote>
+<h5 id="创建一个react项目"><a href="#创建一个react项目" class="headerlink" title="创建一个react项目"></a>创建一个react项目</h5></blockquote>
+<p>脚手架安装好以后，我们就可以创建我们自己的react项目了，我们在<code>D盘</code>创建一个<code>ReactDemo</code>文件夹，然后进入文件夹，创建新的React项目。</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">mkdir ReactDemo     创建ReactDemo文件夹</span><br><span class="line">create-react-app demo01     用脚手架创建React项目</span><br><span class="line">cd demo01       进入React项目</span><br><span class="line">npm start       预览项目，如果可以正常打开，说明创建成功</span><br></pre></td></tr></table></figure>
+
+<p>其实这些操作只需要再终端输入就可以完成；等到浏览器可以打开React网页，并且正常显示图标后，说明我们的环境已经全部搭建完成了。</p>
+<h4 id="2-JSX语法学习"><a href="#2-JSX语法学习" class="headerlink" title="2.JSX语法学习"></a>2.JSX语法学习</h4><blockquote>
+<p><code>javascript</code> and <code>xml</code> 的结合，遇到<code>&lt;</code>当HTML解析 遇到<code>{</code>当JavaScript解析</p>
+</blockquote>
+<blockquote>
+<p><code>React</code>组件引入首字母必须大写</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">React组件引入</span><br><span class="line"><span class="keyword">import</span> React,&#123;Component&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line">    ||</span><br><span class="line"><span class="keyword">import</span> React <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"><span class="keyword">const</span> Component = React.Components</span><br><span class="line"></span><br><span class="line">以下两种语法相等</span><br><span class="line"></span><br><span class="line"><span class="keyword">return</span> (</span><br><span class="line">    &lt;ul className=<span class="string">"my-list"</span>&gt;</span><br><span class="line">        &lt;li&gt;Aruis&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">        &lt;li&gt;I Love React&lt;/</span>li&gt;</span><br><span class="line">    &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">)</span></span><br><span class="line"><span class="regexp">    ||</span></span><br><span class="line"><span class="regexp">var child1 = React.createElement('li',null,'JSBian')</span></span><br><span class="line"><span class="regexp">var child2 = React.createElement('li',null,'I Love React')</span></span><br><span class="line"><span class="regexp">var child3 = React.createElement('ul',&#123;className:'my-list'&#125;,child1,chlid2)</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">花括号语法</span></span><br><span class="line"><span class="regexp">return (</span></span><br><span class="line"><span class="regexp">    &lt;ul className="my-list"&gt;</span></span><br><span class="line"><span class="regexp">        &lt;li&gt;&#123;true?'Aruis':'阿瑞斯'&#125;&lt;/</span>li&gt;</span><br><span class="line">        &lt;li&gt;I Love React&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">    &lt;/u</span>l&gt;</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+
+<h4 id="3-Fragment布局-React数据绑定-动态数据展示添加"><a href="#3-Fragment布局-React数据绑定-动态数据展示添加" class="headerlink" title="3.Fragment布局 React数据绑定 动态数据展示添加"></a>3.Fragment布局 React数据绑定 动态数据展示添加</h4><h5 id="1）-Fragment布局"><a href="#1）-Fragment布局" class="headerlink" title="1）.Fragment布局"></a>1）.Fragment布局</h5><p><code>Fragment</code>代替最外层div，必要时不会影响到flex布局</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React,&#123;Component,Fragment&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line">Class Xiaojiejie extends Component&#123;</span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;Fragment&gt;</span><br><span class="line">                &lt;div&gt;<span class="xml"><span class="tag">&lt;<span class="name">input</span> /&gt;</span></span><span class="xml"><span class="tag">&lt;<span class="name">button</span>&gt;</span>增加服务<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span>&lt;<span class="regexp">/div&gt;</span></span><br><span class="line"><span class="regexp">                &lt;ul&gt;</span></span><br><span class="line"><span class="regexp">                    &lt;li&gt;头部按摩&lt;/</span>li&gt;</span><br><span class="line">                    &lt;li&gt;精油推背&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">                &lt;/u</span>l&gt;</span><br><span class="line">            &lt;<span class="regexp">/Fragment&gt;</span></span><br><span class="line"><span class="regexp">        )</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default Xiaojiejie</span></span><br></pre></td></tr></table></figure>
+
+<h5 id="2）-数据绑定"><a href="#2）-数据绑定" class="headerlink" title="2）.数据绑定"></a>2）.数据绑定</h5><blockquote>
+<p>  React赋值setState</p>
+</blockquote>
+<blockquote>
+<p>  <code>inputChange</code>方法里面的<code>this</code>指向<code>undefined</code>，需要在<code>onChange</code>事件绑定时用<code>bind</code>方法对<code>this</code>进行绑定</p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React,&#123;Component,Fragment&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line">Class Xiaojiejie extends Component&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.state = &#123;</span><br><span class="line">            inputValue:<span class="string">''</span>,</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;Fragment&gt;</span><br><span class="line">                &lt;div&gt;</span><br><span class="line">                    &lt;input</span><br><span class="line">                        value=&#123;<span class="keyword">this</span>.state.inputValue&#125;</span><br><span class="line">                        onChange=&#123;<span class="keyword">this</span>.inputChange.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                    /&gt;</span><br><span class="line">                    &lt;button&gt;增加服务&lt;<span class="regexp">/button&gt;&lt;/</span>div&gt;</span><br><span class="line">                &lt;ul&gt;</span><br><span class="line">                    &lt;li&gt;头部按摩&lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">                    &lt;li&gt;精油推背&lt;/</span>li&gt;</span><br><span class="line">                &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>Fragment&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    inputChange(e)&#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            inputValue:e.target.value</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Xiaojiejie</span><br></pre></td></tr></table></figure>
+
+<h5 id="3）-动态数据展示和添加-删除"><a href="#3）-动态数据展示和添加-删除" class="headerlink" title="3）.动态数据展示和添加/删除"></a>3）.动态数据展示和添加/删除</h5><blockquote>
+<p>  数据遍历展示用<code>map</code>方法，注意<code>key</code>必须是页面的唯一值</p>
+</blockquote>
+<blockquote>
+<p>  react禁止直接操作原数据，需要把<code>state</code>里面的数据拷贝一份改变数据，然后再赋值给<code>state</code></p>
+</blockquote>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React,&#123;Component,Fragment&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line">Class Xiaojiejie extends Component&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.state = &#123;</span><br><span class="line">            inputValue:<span class="string">''</span>,</span><br><span class="line">            list:[<span class="string">'基础按摩'</span>,<span class="string">'精油推背'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;Fragment&gt;</span><br><span class="line">                &lt;div&gt;</span><br><span class="line">                    &lt;input</span><br><span class="line">                        value=&#123;<span class="keyword">this</span>.state.inputValue&#125;</span><br><span class="line">                        onChange=&#123;<span class="keyword">this</span>.inputChange.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                    /&gt;</span><br><span class="line">                    &lt;button onClick=&#123;<span class="keyword">this</span>.addList.bind(<span class="keyword">this</span>)&#125;&gt;</span><br><span class="line">                        增加服务</span><br><span class="line">                    &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">                &lt;/</span>div&gt;</span><br><span class="line">                &lt;ul&gt;</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">this</span>.state.list.map(<span class="function">(<span class="params">item,index</span>) =&gt;</span> &#123;</span><br><span class="line">                            <span class="keyword">return</span> (</span><br><span class="line">                                &lt;li </span><br><span class="line">                                    key=&#123;index+item&#125;</span><br><span class="line">                                    onChange=&#123;deleteItem.bind(<span class="keyword">this</span>,index)&#125;</span><br><span class="line">                                &gt;</span><br><span class="line">                                    &#123;item&#125;</span><br><span class="line">                                &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">                            )</span></span><br><span class="line"><span class="regexp">                        &#125;)</span></span><br><span class="line"><span class="regexp">                    &#125;</span></span><br><span class="line"><span class="regexp">                &lt;/u</span>l&gt;</span><br><span class="line">            &lt;<span class="regexp">/Fragment&gt;</span></span><br><span class="line"><span class="regexp">        )</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    inputChange(e)&#123;</span></span><br><span class="line"><span class="regexp">        this.setState(&#123;</span></span><br><span class="line"><span class="regexp">            inputValue:e.target.value</span></span><br><span class="line"><span class="regexp">        &#125;)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    addList()&#123;</span></span><br><span class="line"><span class="regexp">        this.setState(&#123;</span></span><br><span class="line"><span class="regexp">            list:[...this.state.list,this.state.inputValue],</span></span><br><span class="line"><span class="regexp">            inputValue:""</span></span><br><span class="line"><span class="regexp">        &#125;)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    deleteItem()&#123;</span></span><br><span class="line"><span class="regexp">        /</span><span class="regexp">/ list属于数组这里属于引用类型，从根本意义上还是属于操作了原数组</span></span><br><span class="line"><span class="regexp">        /</span><span class="regexp">/ let list = this.state.list</span></span><br><span class="line"><span class="regexp">        copy深拷贝一份新的值进行操作(没有进行验证~)</span></span><br><span class="line"><span class="regexp">        let list = copy(this.state.list)</span></span><br><span class="line"><span class="regexp">        </span></span><br><span class="line"><span class="regexp">        list.splice(index,1)</span></span><br><span class="line"><span class="regexp">        this.setState(&#123;</span></span><br><span class="line"><span class="regexp">            list:list</span></span><br><span class="line"><span class="regexp">        &#125;)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">export default Xiaojiejie</span></span><br><span class="line"><span class="regexp"></span></span><br><span class="line"><span class="regexp">注意：1.css标签import引入之后要改名为className</span></span><br><span class="line"><span class="regexp">import './</span>style.css<span class="string">'</span></span><br><span class="line"><span class="string">&lt;input className="test" /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="4-React组件化开发"><a href="#4-React组件化开发" class="headerlink" title="4.React组件化开发"></a>4.React组件化开发</h4><h5 id="1-组件拆分和组件传值"><a href="#1-组件拆分和组件传值" class="headerlink" title="1).组件拆分和组件传值"></a>1).组件拆分和组件传值</h5><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br></pre></td><td class="code"><pre><span class="line">注意：<span class="number">1.</span>子组件里面的<span class="string">`construtor`</span>方法可以统一对页面的方法进行<span class="string">`this`</span>绑定</span><br><span class="line">      <span class="number">2.</span>子组件不能直接操作父组件（这里是把父组件的方法传给子组件进行操作）</span><br><span class="line"></span><br><span class="line">父组件</span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> React,&#123;Component,Fragment&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"><span class="keyword">import</span> XiaojiejieItem <span class="keyword">from</span> <span class="string">'./XiaojiejieItem'</span></span><br><span class="line"></span><br><span class="line">Class Xiaojiejie extends Component&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.state = &#123;</span><br><span class="line">            inputValue:<span class="string">''</span>,</span><br><span class="line">            list:[<span class="string">'基础按摩'</span>,<span class="string">'精油推背'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;Fragment&gt;</span><br><span class="line">                &lt;div&gt;</span><br><span class="line">                    &lt;input</span><br><span class="line">                        value=&#123;<span class="keyword">this</span>.state.inputValue&#125;</span><br><span class="line">                        onChange=&#123;<span class="keyword">this</span>.inputChange.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                    /&gt;</span><br><span class="line">                    &lt;button onClick=&#123;<span class="keyword">this</span>.addList.bind(<span class="keyword">this</span>)&#125;&gt;</span><br><span class="line">                        增加服务</span><br><span class="line">                    &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">                &lt;/</span>div&gt;</span><br><span class="line">                &lt;ul&gt;</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">this</span>.state.list.map(<span class="function">(<span class="params">item,index</span>) =&gt;</span> &#123;</span><br><span class="line">                            <span class="keyword">return</span> (</span><br><span class="line">                                &lt;XiaojiejieItem</span><br><span class="line">                                    key=&#123;index+item&#125;</span><br><span class="line">                                    content=&#123;item&#125;</span><br><span class="line">                                    index=&#123;index&#125;</span><br><span class="line">                                    deleteItem=&#123;<span class="keyword">this</span>.deleteItem.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                                /&gt;</span><br><span class="line">                            )</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;</span><br><span class="line">                &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>Fragment&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    inputChange(e)&#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            inputValue:e.target.value</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    addList()&#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            list:[...this.state.list,<span class="keyword">this</span>.state.inputValue],</span><br><span class="line">            inputValue:<span class="string">""</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    deleteItem()&#123;</span><br><span class="line">        <span class="comment">// list属于数组这里属于引用类型，从根本意义上还是属于操作了原数组</span></span><br><span class="line">        <span class="comment">// let list = this.state.list</span></span><br><span class="line">        copy深拷贝一份新的值进行操作(没有进行验证~)</span><br><span class="line">        <span class="keyword">let</span> list = copy(<span class="keyword">this</span>.state.list)</span><br><span class="line">        </span><br><span class="line">        list.splice(index,<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            list:list</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Xiaojiejie</span><br><span class="line"></span><br><span class="line">子组件</span><br><span class="line"><span class="keyword">import</span> React,(Component,Fragment) <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"></span><br><span class="line">Class XiaojiejieItem extends Component &#123;</span><br><span class="line">    construtor(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.handleClick = <span class="keyword">this</span>.handleClick.bind(<span class="keyword">this</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render(</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;li onClick=&#123;<span class="keyword">this</span>.handleClick&#125;&gt;</span><br><span class="line">                &#123;<span class="keyword">this</span>.props.content&#125;</span><br><span class="line">            &lt;<span class="regexp">/li&gt;</span></span><br><span class="line"><span class="regexp">        );</span></span><br><span class="line"><span class="regexp">    )</span></span><br><span class="line"><span class="regexp">    </span></span><br><span class="line"><span class="regexp">    handleClick()&#123;</span></span><br><span class="line"><span class="regexp">        this.props.deleteItem(this.props.index)</span></span><br><span class="line"><span class="regexp">    &#125;</span></span><br><span class="line"><span class="regexp">&#125;</span></span><br><span class="line"><span class="regexp">export default XiaojiejieItem</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="5-PropTypes校验传递的值"><a href="#5-PropTypes校验传递的值" class="headerlink" title="5.PropTypes校验传递的值"></a>5.PropTypes校验传递的值</h4><blockquote>
+<p>  isRequired必须传递的值</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">import React,(Component,Fragment) from &#39;react&#39;</span><br><span class="line">import PropTypes from &#39;prop-types&#39;</span><br><span class="line"></span><br><span class="line">Class XiaojiejieItem extends Component &#123;</span><br><span class="line">    construtor(props)&#123;</span><br><span class="line">        super(props)</span><br><span class="line">        this.handleClick &#x3D; this.handleClick.bind(this)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render(</span><br><span class="line">        return (</span><br><span class="line">            &lt;li onClick&#x3D;&#123;this.handleClick&#125;&gt;</span><br><span class="line">                &#123;this.props.avname&#125;为你服务-&#123;this.props.content&#125;</span><br><span class="line">            &lt;&#x2F;li&gt;</span><br><span class="line">        );</span><br><span class="line">    )</span><br><span class="line">    </span><br><span class="line">    handleClick()&#123;</span><br><span class="line">        this.props.deleteItem(this.props.index)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">XiaojiejieItem.propTypes&#x3D;&#123;</span><br><span class="line">    avname: PropTypes.string.isRequired,</span><br><span class="line">    content: PropTypes.string,</span><br><span class="line">    index: PropTypes.number,</span><br><span class="line">    deleteItem: PropTypes.func</span><br><span class="line">&#125;</span><br><span class="line">XiaojiejieItem.defaultProps&#x3D;&#123;</span><br><span class="line">    avname:&#39;松岛枫&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default XiaojiejieItem</span><br></pre></td></tr></table></figure>
+
+<h4 id="5-ref使用"><a href="#5-ref使用" class="headerlink" title="5.ref使用"></a>5.ref使用</h4><figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> React,&#123;Component,Fragment&#125; <span class="keyword">from</span> <span class="string">'react'</span></span><br><span class="line"><span class="keyword">import</span> XiaojiejieItem <span class="keyword">from</span> <span class="string">'./XiaojiejieItem'</span></span><br><span class="line"></span><br><span class="line">Class Xiaojiejie extends Component&#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">constructor</span>(props)&#123;</span><br><span class="line">        <span class="keyword">super</span>(props)</span><br><span class="line">        <span class="keyword">this</span>.state = &#123;</span><br><span class="line">            inputValue:<span class="string">''</span>,</span><br><span class="line">            list:[<span class="string">'基础按摩'</span>,<span class="string">'精油推背'</span>]</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    render()&#123;</span><br><span class="line">        <span class="keyword">return</span> (</span><br><span class="line">            &lt;Fragment&gt;</span><br><span class="line">                &lt;div&gt;</span><br><span class="line">                    &lt;input</span><br><span class="line">                        value=&#123;<span class="keyword">this</span>.state.inputValue&#125;</span><br><span class="line">                        onChange=&#123;<span class="keyword">this</span>.inputChange.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                        ref = &#123;(input)=&gt;&#123;<span class="keyword">this</span>.input=input&#125;&#125;</span><br><span class="line">                    /&gt;</span><br><span class="line">                    &lt;button onClick=&#123;<span class="keyword">this</span>.addList.bind(<span class="keyword">this</span>)&#125;&gt;</span><br><span class="line">                        增加服务</span><br><span class="line">                    &lt;<span class="regexp">/button&gt;</span></span><br><span class="line"><span class="regexp">                &lt;/</span>div&gt;</span><br><span class="line">                &lt;ul&gt;</span><br><span class="line">                    &#123;</span><br><span class="line">                        <span class="keyword">this</span>.state.list.map(<span class="function">(<span class="params">item,index</span>) =&gt;</span> &#123;</span><br><span class="line">                            <span class="keyword">return</span> (</span><br><span class="line">                                &lt;XiaojiejieItem</span><br><span class="line">                                    key=&#123;index+item&#125;</span><br><span class="line">                                    content=&#123;item&#125;</span><br><span class="line">                                    index=&#123;index&#125;</span><br><span class="line">                                    deleteItem=&#123;<span class="keyword">this</span>.deleteItem.bind(<span class="keyword">this</span>)&#125;</span><br><span class="line">                                /&gt;</span><br><span class="line">                            )</span><br><span class="line">                        &#125;)</span><br><span class="line">                    &#125;</span><br><span class="line">                &lt;<span class="regexp">/ul&gt;</span></span><br><span class="line"><span class="regexp">            &lt;/</span>Fragment&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    inputChange(e)&#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            <span class="comment">// inputValue:e.target.value</span></span><br><span class="line">            inputValue: <span class="keyword">this</span>.input.value</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    addList()&#123;</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            list:[...this.state.list,<span class="keyword">this</span>.state.inputValue],</span><br><span class="line">            inputValue:<span class="string">""</span></span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    deleteItem()&#123;</span><br><span class="line">        <span class="comment">// list属于数组这里属于引用类型，从根本意义上还是属于操作了原数组</span></span><br><span class="line">        <span class="comment">// let list = this.state.list</span></span><br><span class="line">        copy深拷贝一份新的值进行操作(没有进行验证~)</span><br><span class="line">        <span class="keyword">let</span> list = copy(<span class="keyword">this</span>.state.list)</span><br><span class="line">        </span><br><span class="line">        list.splice(index,<span class="number">1</span>)</span><br><span class="line">        <span class="keyword">this</span>.setState(&#123;</span><br><span class="line">            list:list</span><br><span class="line">        &#125;)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">export</span> <span class="keyword">default</span> Xiaojiejie</span><br></pre></td></tr></table></figure>
+    </section>
+    <section class="extra">
+      
+        <section class="donate">
+  <div class="qrcode">
+    <img src="/image/zfb.jpg">
+  </div>
+  <div class="icon">
+    <a href="javascript:;" id="alipay"><i class="iconfont iconalipay"></i></a>
+    <a href="javascript:;" id="wechat"><i class="iconfont iconwechat-fill"></i></a>
+  </div>
+</section>
+      
+      
+      
+<nav class="nav">
+  
+  
+    <a href="/2020/08/13/typescript/">Typescript<i class="iconfont iconright"></i></a>
+  
+</nav>
+
+    </section>
+    
+    <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<section class="comment">
+  <div class="btn" id="show-gitalk">查看评论</div>
+  <div id="gitalk-container" class="gitalk-container"></div>
+</section>
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+    
+  </section>
+</article>
+  </div>
+</main>
+  <footer class="footer">
+  <div class="footer-social">
+    
+    
+    
+    
+    
+    <a href="tencent://message/?Menu=yes&uin=407955981 " target="_blank" onMouseOver="this.style.color= '#12B7F5'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconQQ "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="https://github.com/bianxuerui " target="_blank" onMouseOver="this.style.color= '#24292E'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  icongithub-fill "></i>
+    </a>
+    
+    
+    
+    
+    
+    <a href="mailto://407955981@qq.com " target="_blank" onMouseOver="this.style.color='#FFBE5B'"
+      onMouseOut="this.style.color='#33333D'">
+      <i class="iconfont footer-social-item  iconmail"></i>
+    </a>
+    
+  </div>
+  <div class="footer-copyright"><p>Copyright© 2020-2020 | <a target="_blank" href="http://www.beian.miit.gov.cn/"> 鲁ICP备20012798号</a></p></div>
+</footer>
+  <div class="fab fab-plus">
+  <i class="iconfont iconplus"></i>
+</div>
+<div class="fab fab-up">
+  <i class="iconfont iconcaret-up"></i>
+</div>
+<div class="fab fab-menu">
+  <i class="iconfont iconmenu"></i>
+</div>
+</body>
+
+
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+
+
+
+
+
+
+
+
+<script src="https://cdn.bootcss.com/highlight.js/9.15.10/highlight.min.js"></script>
+
+
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+</html>
